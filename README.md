@@ -78,7 +78,7 @@ modules: [
 * `headerText`: The header text to be displayed above the values.
 * `updateInterval`: Update interval in seconds for fetching sensor data.
 * `temperatureIconColor`: set the color for the temperature icon
-* `temperatureFontSize`: set the color for the humidity icon
+* `humidityIconColor`: set the color for the humidity icon
 * `temperatureFontSize`: set the size for the temperature icon
 * `humidityFontSize`: set the size for the humidity icon
 * `temperatureOffset`: calibrate the temperature reading
