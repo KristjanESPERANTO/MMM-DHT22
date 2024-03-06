@@ -1,20 +1,20 @@
-const Log = require("logger");
+const Log = require('logger');
 const NodeHelper = require('node_helper');
 const { spawn } = require('child_process');
 const path = require('path');
 
 module.exports = NodeHelper.create({
-  start: function() {
+  start () {
     Log.log('MMM-DHT22 helper started...');
   },
 
-  socketNotificationReceived: function(notification, payload) {
+  socketNotificationReceived (notification, payload) {
     if (notification === 'START_DHT_READING') {
       this.readDHTSensor(payload.gpioPin);
     }
   },
 
-  readDHTSensor: function(gpioPin) {
+  readDHTSensor (gpioPin) {
     const self = this;
     const scriptPath = path.join(__dirname, 'read_dht22_sensor.py');
 
