@@ -42,7 +42,7 @@ Module.register('MMM-DHT22', {
         this.humidity = humidity.toFixed(1) + this.config.humidityUnit;
         this.updateDom();
       } else {
-        console.warn('Invalid humidity reading:', payload.humidity);
+        Log.warn('Invalid humidity reading:', payload.humidity);
       }
     }
   },
